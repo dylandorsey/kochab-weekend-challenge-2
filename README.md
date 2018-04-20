@@ -5,7 +5,7 @@ BASE MODE
 [x] Install express
 [x] Install jquery
 [x] Install body-parser
-[x] Create directories and files and link them
+[x] Create directories and files and link client-side files
 [ ] Set up debugger
 [ ] Set up port
 [ ] Confirm port is listening
