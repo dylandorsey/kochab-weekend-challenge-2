@@ -6,11 +6,11 @@ BASE MODE
 [x] Install jquery
 [x] Install body-parser
 [x] Create directories and files and link client-side files
-[ ] Set up debugger
-[ ] Set up port
-[ ] Confirm port is listening
-[ ] Serve static files
-[ ] Create HTML skeleton (2 input fields + 4 MATH buttons + 1 delete button)
+[x] Set up debugger
+[x] Set up port
+[x] Confirm port is listening
+[x] Serve static files
+[x] Create HTML skeleton (2 input fields + 4 MATH buttons + 1 delete button)
 [ ] Create POST request for addition
 [ ] Create POST request for subtraction
 [ ] Create POST request for multiplication
