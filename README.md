@@ -12,6 +12,7 @@ BASE MODE
 [x] Serve static files
 [x] Create HTML skeleton (2 input fields + 4 MATH buttons + 1 delete button)
 [x] Create event listeners for buttons
+[x] Create function to package operation for posting (numbers, operation type)
 [ ] Create POST request for addition
 [ ] Create POST request for subtraction
 [ ] Create POST request for multiplication
