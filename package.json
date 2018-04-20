@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dylandorsey/kochab-weekend-challenge-2#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "npm": "^5.8.0"
   }
 }
