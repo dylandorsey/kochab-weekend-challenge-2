@@ -11,6 +11,7 @@ BASE MODE
 [x] Confirm port is listening
 [x] Serve static files
 [x] Create HTML skeleton (2 input fields + 4 MATH buttons + 1 delete button)
+[x] Create event listeners for buttons
 [ ] Create POST request for addition
 [ ] Create POST request for subtraction
 [ ] Create POST request for multiplication
