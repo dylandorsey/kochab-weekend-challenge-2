@@ -2,7 +2,7 @@ console.log('in js');
 
 $(document).ready(onReady);
 
-const newOperation = {
+let newOperation = {
     numberOne: '',
     numberTwo: '',
     operation: ''
@@ -18,17 +18,19 @@ function onReady() {
 }
 
 function addNumbers() {
-    insertNumbers();
-    newOperation.operation = 'add';
-    console.log(newOperation);
     console.log('clicked add');
-    postNumbers();
+    newOperation = insertNumbers();
+    newOperation.operation = 'add';
+    console.log('operation to be posted:');
+    console.log(newOperation);
+    postNewOperation(newOperation);
 }
 
 function subtractNumbers() {
     insertNumbers();
     newOperation.operation = 'subtract';
     console.log('clicked subtract');
+    postNewOperation(newOperation);
 }
 
 function divideNumbers() {
@@ -53,4 +55,14 @@ function insertNumbers() {
     return newOperation;
 }
 
-
+function postNewOperation(newOperation){
+    console.log(newOperation);
+    $.ajax({
+        method: 'POST',
+        url: '/new-operation',
+        data: newOperation
+    })
+    .then(function(response){
+        console.log(response);
+    });
+}
