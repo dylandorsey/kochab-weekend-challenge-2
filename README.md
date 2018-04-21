@@ -14,11 +14,12 @@ BASE MODE
 [x] Create event listeners for buttons
 [x] Create function to package operation for posting (numbers, operation type)
 [x] Create POST request for new operation
-[ ] Create function for addition
-[ ] Create function for subtraction
-[ ] Create function for multiplication
-[ ] Create function for division
-[ ] Create GET request for history (must run upon page load)
+[x] Create function for addition
+[x] Create function for subtraction
+[x] Create function for multiplication
+[x] Create function for division
+[x] Create GET request for history 
+[x] GET request for history runs on page load
 [ ] Create GET request for result (must run upon POST request for math operation)
 [ ] Create client function for appending history to DOM
 [ ] Create client function for appending result to DOM

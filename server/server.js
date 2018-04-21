@@ -13,9 +13,12 @@ app.listen(PORT,() =>{
 
 const operationHistoryArray = []
 
+app.get('/operation-history', (req, res) => {
+    res.send(operationHistoryArray);
+});
+
 app.post('/new-operation', (req, res) => {
     console.log(req.body); 
-    operationHistoryArray.push(req.body);
     req.body.numberOne = Number(req.body.numberOne);
     req.body.numberTwo = Number (req.body.numberTwo);
     operation = req.body.operation;
@@ -32,6 +35,9 @@ app.post('/new-operation', (req, res) => {
     else if (operation == 'divide') {
         result = divide(req.body);
     }
+    req.body.result = result;
+    operationHistoryArray.push(req.body);
+    console.log(operationHistoryArray);
 });// end app.post
 
 function add (arrayObject) {

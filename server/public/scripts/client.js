@@ -15,6 +15,7 @@ function onReady() {
     $('#multiplyBtn').on('click', multiplyNumbers);
     $('#divideBtn').on('click', divideNumbers);
     $('#deleteHistoryBtn').on('click', deleteHistory);
+    getOperationHistory();
 }
 
 function addNumbers() {
@@ -51,14 +52,24 @@ function insertNumbers() {
     return newOperation;
 }
 
-function postNewOperation(newOperation){
+function postNewOperation(newOperation) {
     console.log(newOperation);
     $.ajax({
         method: 'POST',
         url: '/new-operation',
         data: newOperation
     })
-    .then(function(response){
+        .then(function (response) {
+            console.log(response);
+        });
+}
+
+function getOperationHistory() {
+    $.ajax({
+        type: 'GET',
+        url: '/operation-history'
+    })
+    .then(function (response) {
         console.log(response);
     });
 }
