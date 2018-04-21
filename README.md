@@ -28,7 +28,6 @@ BASE MODE
 
 HARD MODE
 [ ] convert input fields to number buttons 0-9
-[ ] math operator buttons
-[ ] 
+[ ] math operator buttonsx`
 
  

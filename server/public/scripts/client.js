@@ -74,9 +74,9 @@ function getOperationHistory() {
         type: 'GET',
         url: '/operation-history'
     })
-    .then(function (response) {
-         displayOperationHistory(response);
-    });
+        .then(function (response) {
+            displayOperationHistory(response);
+        });
 }
 
 function clearOperationHistory() {
@@ -91,7 +91,7 @@ function clearOperationHistory() {
 
 function displayOperationHistory(historyArray) {
     emptyHistoryDiv();
-    for (let i = 0; i<historyArray.length; i++) {
+    for (let i = 0; i < historyArray.length; i++) {
         let numberOne = historyArray[i].numberOne;
         let numberTwo = historyArray[i].numberTwo;
         let operation = historyArray[i].operation;
