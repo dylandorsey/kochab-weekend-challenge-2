@@ -16,7 +16,7 @@ function onReady() {
     $('#subtractBtn').on('click', subtractNumbers);
     $('#multiplyBtn').on('click', multiplyNumbers);
     $('#divideBtn').on('click', divideNumbers);
-    $('#deleteHistoryBtn').on('click', deleteHistory);
+    $('#deleteHistoryBtn').on('click', clearOperationHistory);
     getOperationHistory();
 }
 
@@ -74,27 +74,22 @@ function getOperationHistory() {
         type: 'GET',
         url: '/operation-history'
     })
+    .then(function (response) {
+         displayOperationHistory(response);
+    });
+}
+
+function clearOperationHistory() {
+    $.ajax({
+        type: 'GET',
+        url: '/clear-history'
+    })
         .then(function (response) {
-            console.log(response);
             displayOperationHistory(response);
         });
 }
 
 function displayOperationHistory(historyArray) {
-    // for (operationObject in historyArray) {
-    //     if (operationObject.operation = 'add') {
-    //         operation = '+';
-    //     }
-    //     else if (operationObject.operation = 'subtract') {
-    //         operation = '-';
-    //     }
-    //     else if (operationObject.operation = 'multiply') {
-    //         operation = '*';
-    //     }
-    //     else if (operationObject.operation = 'divide') {
-    //         operation = '/';
-    //     }
-    // }
     emptyHistoryDiv();
     for (let i = 0; i<historyArray.length; i++) {
         let numberOne = historyArray[i].numberOne;

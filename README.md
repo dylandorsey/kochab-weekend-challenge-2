@@ -23,7 +23,7 @@ BASE MODE
 [x] Create GET request for result (must run upon POST request for math operation)
 [x] Create client function for appending history to DOM
 [x] Create client function for appending result to DOM
-[ ] Create POST request for clearing history
+[x] Create GET request for clearing history
 
 
 HARD MODE

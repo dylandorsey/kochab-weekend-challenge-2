@@ -40,6 +40,11 @@ app.post('/new-operation', (req, res) => {
     console.log(operationHistoryArray);
 });// end app.post
 
+app.get('/clear-history', (req, res) => {
+    operationHistoryArray.splice(0,operationHistoryArray.length);
+    res.send(operationHistoryArray);
+});// end app.post
+
 function add (arrayObject) {
     result = arrayObject.numberOne + arrayObject.numberTwo;
     console.log(result);
