@@ -18,31 +18,27 @@ function onReady() {
 }
 
 function addNumbers() {
-    console.log('clicked add');
     newOperation = insertNumbers();
     newOperation.operation = 'add';
-    console.log('operation to be posted:');
-    console.log(newOperation);
     postNewOperation(newOperation);
 }
 
 function subtractNumbers() {
-    insertNumbers();
+    newOperation = insertNumbers();
     newOperation.operation = 'subtract';
-    console.log('clicked subtract');
     postNewOperation(newOperation);
 }
 
 function divideNumbers() {
-    insertNumbers();
+    newOperation = insertNumbers();
     newOperation.operation = 'divide';
-    console.log('clicked divide');
+    postNewOperation(newOperation);
 }
 
 function multiplyNumbers() {
-    insertNumbers();
+    newOperation = insertNumbers();
     newOperation.operation = 'multiply';
-    console.log('clicked multiply');
+    postNewOperation(newOperation);
 }
 
 function deleteHistory() {
