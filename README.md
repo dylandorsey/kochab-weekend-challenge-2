@@ -27,7 +27,9 @@ BASE MODE
 
 
 HARD MODE
-[ ] convert input fields to number buttons 0-9
-[ ] math operator buttonsx`
+[ ] create buttons: 0-9, math operators, submit, & clear
+[ ] buttons append numbers to input boxes
+[ ] 
+
 
  

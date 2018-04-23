@@ -16,19 +16,61 @@
         <header>
             <h1>More Different Calculator!</h1>
         </header>
-        <div class="output" id="outputDiv">
-        </div>
+        <h3>Input</h3>
+        <p>Enter two numbers and click a math operator button to see the calculation!</p>
         <div class="input" id="inputDiv">
-            <input id="numberOne" type="number">
-            <input id="numberTwo" type="number">
+            <input id="numberOne" class = "inputBox" type="number" placeholder="first number">
+            <input id="numberTwo" class = "inputBox" type="number" placeholder="second number">
             <button id="addBtn">Add</button>
             <button id="subtractBtn">Subtract</button>
             <button id="multiplyBtn">Multiply</button>
             <button id="divideBtn">Divide</button>
         </div>
+        <div>
+
+        </div>
+        <div class="spacer">
+            <p> </p>
+        </div>
+        <p>Click "clear" to start a new calculation!</p>
+        <button id="clearResultFieldBtn">Clear</button>
+        <div class="display" id="outputDiv">
+                <h3>Result:</h3>
+                <div id="resultField"></div>
+
+            </div>
+        <!-- <div id="calculatorGUI">
+            <div id="calculatorDisplay" class="display">Calculator input: </div>
+            <div class="buttonRow">
+                <button class="numberBtn" id="oneBtn">1</button>
+                <button class="numberBtn" id="twoBtn">2</button>
+                <button class="numberBtn" id="threeBtn">3</button>
+                <button class="operationBtn" id="divisionBtn">/</button>
+            </div>
+            <div class="buttonRow">
+                <button class="numberBtn" id="fourBtn">4</button>
+                <button class="numberBtn" id="fiveBtn">5</button>
+                <button class="numberBtn" id="sixBtn">6</button>
+                <button class="operationBtn" id="multiplicationBtn">x</button>
+            </div>
+            <div class="buttonRow">
+                <button class="numberBtn" id="sevenBtn">7</button>
+                <button class="numberBtn" id="eightBtn">8</button>
+                <button class="numberBtn" id="nineBtn">9</button>
+                <button class="operationBtn" id="subtractionBtn">-</button>
+            </div>
+            <div class="buttonRow">
+                <button class="numberBtn" id="zeroBtn">0</button>
+                <button class="operationBtn submitBtn">=</button>
+                <button class="operationBtn" id="addition">+</button>
+            </div>
+        </div>
+        <div class="spacer">
+            <p> </p>
+        </div> -->
         <button id="deleteHistoryBtn">Delete history</button>
-        <div class="output">
-            <h4>History:</h4>
+        <div class="display">
+            <h3>History:</h3>
             <div id="historyDiv"></div>
         </div>
     </main>
